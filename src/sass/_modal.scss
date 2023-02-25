@@ -46,7 +46,27 @@
   margin-right: 0;
 }
 
-.modal__btn-open:hover {
+.modal__btn-open:hover,
+.modal__btn-close:hover {
   background-color: rgba(252, 227, 138, 0.8);
   color: #607b83;
+}
+
+.modal__btn-close {
+  color: #000;
+  background-color: #0000004d;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  // width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  // background: transparent;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  margin: 0 auto;
+  margin-right: 0;
 }
