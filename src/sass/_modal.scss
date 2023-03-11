@@ -29,9 +29,10 @@
 
 .modal__btn-open {
   color: #000;
-  background-color: #0000004d;
+  background-color: rgb(240, 231, 221);
+
   text-align: center;
-  padding: 0.8rem;
+  padding: 10px 13px;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -39,11 +40,18 @@
   display: block;
   // width: 100%;
   cursor: pointer;
+  border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   // background: transparent;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   margin: 0 auto;
   margin-right: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal__btn-open:active {
+  transform: scale(0.96);
 }
 
 .modal__btn-open:hover,
@@ -53,10 +61,13 @@
 }
 
 .modal__btn-close {
-  color: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: antiquewhite;
   background-color: #0000004d;
   text-align: center;
-  padding: 0.8rem;
+  padding: 10px 13px;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -64,9 +75,11 @@
   display: block;
   // width: 100%;
   cursor: pointer;
+  border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   // background: transparent;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   margin: 0 auto;
   margin-right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
