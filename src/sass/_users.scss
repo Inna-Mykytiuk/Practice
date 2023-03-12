@@ -1,0 +1,13 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.users-item {
+  text-align: center;
+  flex-basis: calc((100% - 40px) / 3);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+}
