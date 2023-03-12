@@ -6,3 +6,8 @@ export function onOpenButtonClick(event) {
 export function onCloseButtonClick(event) {
   closeModal();
 }
+// export function onCloseButtonEsc(event) {
+//   if (event.key === 'Escape') {
+//     closeModal();
+//   }
+// }

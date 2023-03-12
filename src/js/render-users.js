@@ -1,5 +1,3 @@
-import { refs } from './ref';
-
 //створення розмітки
 export function createUsersListMarkup(users) {
   return users
@@ -23,6 +21,17 @@ export function createUsersListMarkup(users) {
 }
 
 //додавання розмітки
-export function renderUsersList(users) {
-  refs.usersList.insertAdjacentHTML('beforeend', createUsersListMarkup(users));
+export function renderMarkup(element, markup) {
+  element.insertAdjacentHTML('beforeend', markup);
+}
+
+// свторення розмітки для одного елемента
+export function createUserMarkup({ firstName, lastName, age, gender, image }) {
+  return `<div class = "user-card">
+          <img src="${image}" alt="photo" />
+          <p>Name: ${firstName}</p>
+          <p>Surname: ${lastName}</p>
+          <p>Age: ${age}</p>
+          <p>Gender: ${gender}</p>
+        </div>`;
 }

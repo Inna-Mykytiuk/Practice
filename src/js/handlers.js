@@ -1,12 +1,18 @@
-import { getAllUsers } from './servises/api';
-import { renderUsersList } from './render-users';
+import { getAllUsers, getUserById } from './servises/api';
+import {
+  createUserMarkup,
+  createUsersListMarkup,
+  renderMarkup,
+} from './render-users';
+import { closeModal, openModal } from './modal';
+import { refs } from './ref';
 
 //отримуємо список юзерів при натисканні на кнопку
 export async function onBtnClick() {
   try {
     const { users } = await getAllUsers();
     console.log(users);
-    renderUsersList(users);
+    renderMarkup(refs.usersList, createUsersListMarkup(users));
   } catch (error) {
     console.log(error.message);
   }
@@ -25,8 +31,21 @@ export async function onUserListItemClick(event) {
   //робимо запит на бек через try..catch
   try {
     const user = await getUserById(userId);
+
     console.log(user);
+    openModal();
+    renderMarkup(refs.modal, createUserMarkup(user));
   } catch (error) {
     console.log(error.message);
   }
 }
+
+// export function closeModal() {
+//   refs.backdrop.addEventListener('click', () => {
+//     refs.modal.classList.remove('is-hidden');
+//   });
+
+//   refs.closeModalButton.addEventListener('click', () => {
+//     refs.modal.classList.remove('is-hidden');
+//   });
+// }

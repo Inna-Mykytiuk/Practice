@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <div class="container">        
+    <div class="container">
+      <!-- <button type="button" class="modal__btn-open">O</button> -->
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button type="button" class="modal__btn-close">X</button>
+        </div>
+      </div>        
       </ul>
       <ul class="user-list"></ul>
     </div>
     <button type="button" class="btn">Get All Users</button>
     <script type="module" src="./index.js"></script>
   </body>
+
   
 </html>
