@@ -89,3 +89,19 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.container-users {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
