@@ -5,7 +5,7 @@
   "homepage": "https://inna-mykytiuk.github.io/Practice/",
   "scripts": {
     "start": "parcel src/*.html -p 3331 --open",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Practice//"
   },
   "repository": {
     "type": "git",
